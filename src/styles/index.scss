@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import './reset';
+@import './mixins';
+
+body {
+    max-width: 1200px;
+    margin: auto;
+    @include font-regular;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hide {
+    display: none !important;
+}
+
+
+.blog-content.editor-value {
+    h1, h2, h3 {
+        @include font-bold;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+.page-title {
+    font-size: 2rem;
+    @include font-bold;
+}
+
+.page-header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 1rem;
+}
